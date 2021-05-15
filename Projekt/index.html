@@ -1,1 +1,326 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Fifa21</title>
+    <style type="text/css">
 
+      * {
+        margin: 0px;
+        padding: 0px;
+      }
+
+      body {
+        background-color: purple;
+        overflow-y : scroll;
+          overflow-x : hidden;
+      }
+
+      #logo-hintergrund {
+        background-color: white;
+        height: 108px;
+      }
+
+      #logo {
+        background-image: url(https://user-images.githubusercontent.com/77481359/118372661-17eb4480-b5b3-11eb-8c1b-d50e52eb99a5.jpg);
+        background-repeat: no-repeat;
+        height: 105px;
+      }
+
+      #menuleiste {
+        background-color: white;
+        border-top:2px black solid;
+        border-bottom:2px black solid;
+        height: 50px;
+        padding:5px;
+      }
+
+      a.eins {
+        font-size: 45px;
+        text-decoration: none;
+        color: black;
+        padding-left:20px;
+        padding-right:20px;
+        border-right: 2px black solid;
+      }
+
+      a.zwei {
+        font-size: 45px;
+        text-decoration: none;
+        color: black;
+        padding-left:30px;
+        padding-right:20px;
+      }
+
+      a.eins:hover {
+        background-color: #A901DB;
+        color: white;
+      }
+
+      a.zwei:hover {
+        background-color: #A901DB;
+        color: white;
+      }
+
+      #Totsbild {
+        background-image: url(https://user-images.githubusercontent.com/77481359/118372663-1883db00-b5b3-11eb-8940-833229959b36.png);
+        background-repeat: no-repeat;
+        height: 666px;
+        width: 1200px;
+        border-left: 1px black solid;
+        border-right: 1px black solid;
+        border-bottom: 1px black solid;
+        position: relative;
+        left: 190px;
+      }
+      h1.Tots {
+        color: white;
+        font-size: 40px;
+        position: relative;
+        top: 190px;
+        left: 30px;
+      }
+
+      p.Tots {
+        color: white;
+        font-size: 20px;
+        position: relative;
+        top: 190px;
+        left: 30px;
+      }
+
+      a.Tots {
+        color: white;
+        font-size: 40px;
+        text-decoration: none;
+        border: 2px white solid;
+        padding: 5px;
+        position: relative;
+        top: 220px;
+        left: 105px;
+      }
+
+      a.Tots:hover {
+        color:#5F04B4;
+      }
+
+      #Generation {
+        background-image: url(https://user-images.githubusercontent.com/77481359/118372659-16ba1780-b5b3-11eb-8d3e-3b324d1fca16.png);
+        background-repeat: no-repeat;
+        height: 595px;
+        width: 1200px;
+        border: 1px black solid;
+        position: relative;
+        left: 190px;
+        top:10px;
+      }
+
+      h1.Generation {
+        color: white;
+        font-size: 24px;
+        position: relative;
+        top: 90px;
+        left: 750px;
+      }
+
+      p.Generation1 {
+        color: white;
+        font-size: 20px;
+        position: relative;
+        top: 190px;
+        left: 1050px;
+      }
+
+      p.Generation2 {
+        color: white;
+        font-size: 20px;
+        position: relative;
+        top: 190px;
+        left: 1010px;
+      }
+
+      p.Generation3 {
+        color: white;
+        font-size: 20px;
+        position: relative;
+        top: 190px;
+        left: 1000px;
+      }
+
+      p.Generation4 {
+        color: white;
+        font-size: 20px;
+        position: relative;
+        top: 190px;
+        left: 990px;
+      }
+
+      p.Generation5 {
+        color: white;
+        font-size: 20px;
+        position: relative;
+        top: 190px;
+        left: 970px;
+      }
+
+      a.Generation {
+        color: white;
+        font-size: 40px;
+        text-decoration: none;
+        border: 2px white solid;
+        padding: 5px;
+        position: relative;
+        top: 220px;
+        left: 940px;
+      }
+
+      a.Generation:hover {
+        color:#5F04B4;
+      }
+
+      #EA-Play {
+        background-image: url(https://user-images.githubusercontent.com/77481359/118372655-1457bd80-b5b3-11eb-812c-88eb86d7205b.jpg);
+        background-repeat: no-repeat;
+        height: 675px;
+        width: 1200px;
+        border: 1px black solid;
+        position: relative;
+        left: 190px;
+        top:20px;
+      }
+
+      h1.EA-Play {
+        color: white;
+        font-size: 40px;
+        position: relative;
+        top: 190px;
+        left: 30px;
+      }
+
+      p.EA-Play {
+        color: white;
+        font-size: 30px;
+        position: relative;
+        top: 190px;
+        left: 30px;
+      }
+
+      a.EA-Play {
+        color: white;
+        font-size: 40px;
+        text-decoration: none;
+        border: 2px white solid;
+        padding: 5px;
+        position: relative;
+        top: 240px;
+        left: 30px;
+      }
+
+      a.EA-Play:hover {
+        color:#5F04B4;
+      }
+
+      #Abtrennstrich {
+        border-bottom: 3px black solid;
+        width: 1300px;
+        position: relative;
+        top: 30px;
+        left: 135px;
+      }
+
+      p.unten {
+        color: white;
+        font-size: 25px;
+        position: relative;
+        top: 35px;
+        left: 190px;
+      }
+
+      a.unten {
+        color: white;
+        font-size: 25px;
+        text-decoration: none;
+        padding-right: 20px;
+        position: relative;
+        top: 40px;
+        left: 190px;
+      }
+
+      a.unten:hover {
+        color:#0000FF;
+      }
+
+      #Alter {
+        background-image: url(https://user-images.githubusercontent.com/77481359/118372654-128dfa00-b5b3-11eb-8f73-0f73501e8b1d.png);
+        background-repeat: no-repeat;
+        height: 72px;
+        width: 73px;
+        border: 1px black solid;
+        position: relative;
+        left: 1300px;
+        top:-20px;
+      }
+
+      #FIFA {
+        background-image: url(https://user-images.githubusercontent.com/77481359/118372657-1588ea80-b5b3-11eb-9687-4c2bb48999ea.png);
+        background-repeat: no-repeat;
+        height: 90px;
+        width: 72px;
+        border: 1px black solid;
+        position: relative;
+        left: 1200px;
+        top:-94px;
+      }
+
+
+
+    </style>
+  </head>
+  <body>
+    <div id="logo-hintergrund">
+      <div id="logo"></div>
+    </div>
+    <div id="menuleiste">
+      <a class="eins" href="Infos.html">INFOS</a>
+	    <a class="eins" href="Spielmodi.html">SPIELMODI</a>
+	    <a class="eins" href="Community.html">COMMUNITY</a>
+	    <a class="eins" href="News und Medien.html">NEWS & MEDIEN</a>
+	    <a class="zwei" href="Wettkampf.html">WETTKAMPF</a>
+    </div>
+      <div id="Totsbild">
+      <h1 class="Tots">TEAM OF THE SEASON</h1>
+      <br></br>
+      <p class="Tots">Feiere die zuverlässigsten Spieler dieser Saison.</p>
+      <p class="Tots">Die Stars, die in den besten Ligen der Welt aufgetrumpft</p>
+      <p class="Tots">haben, wurden mit enormen Werte-Upgrades ausgestattet.</p>
+      <a  class="Tots"href="Teams ansehen.html">Teams ansehen</a>
+    </div>
+    <div id="Generation">
+    <h1 class="Generation">ERLEBE DIE NÄCHSTE GENERATION</h1>
+    <br></br>
+    <p class="Generation1">In FIFA 21 auf</p>
+    <p class="Generation2">PlayStation®5 und</p>
+    <p class="Generation3">Xbox Series X|S fühlt</p>
+     <p class="Generation4">sich jeder Spieltag noch</p>
+     <p class="Generation5">realer an. Upgrade dein </p>
+       <p class="Generation5">Exemplar jetzt kostenlos*!</p>
+       <a  class="Generation"href="Mehr erfahren.html">Mehr erfahren</a>
+  </div>
+  <div id="EA-Play">
+    <h1 class="EA-Play">Mehr von FIFA 21 mit EA Play!</h1>
+    <br></br>
+    <p class="EA-Play">FIFA 21 ist jetzt in The Play List verfügbar</p>
+    <a  class="EA-Play"href="Jetzt Mitglied werden.html">Jetzt Mitglied werden</a>
+</div>
+<div id="Abtrennstrich"></div>
+<p class="unten">Fifa21</p>
+<a  class="unten"href="Über FIFA 21.html">Über FIFA 21</a>
+<a  class="unten"href="News.html">News</a>
+<a  class="unten"href="FIFA Mobile.html">FIFA Mobile </a>
+<a  class="unten"href="Hol dir FIFA 21.html">Hol dir FIFA 21 </a>
+<div id="Alter"></div>
+<div id="FIFA"></div>
+
+
+  </body>
+</html>
